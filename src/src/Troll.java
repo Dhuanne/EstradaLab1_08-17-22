@@ -1,12 +1,9 @@
-import java.util.*;
 public class Troll {
     public static void main(String args[]){
-        Scanner kbd = new Scanner(System.in);
-        System.out.print("Comment: ");
-        System.out.println(disemvowel(kbd.nextLine()));
+        System.out.println(disemvowel("This website is for losers LOL!"));
     }
     public static String disemvowel(String str) {
-        str = (str.replaceAll("[aeiou]", ""));
+        str = (str.replaceAll("[aeiouAEIOU]", ""));
         return str;
     }
 }
